@@ -24,7 +24,7 @@ This mini project uses the Titanic dataset to explore data preprocessing and app
 ### 2. Data Analysis & Preprocessing
 - Handled missing values (`Age`, `Fare`, and `Sex`)
 - Converted categorical variables (`Sex`, `Embarked`) into numerical values using `.map()`
-- Used `.mean()`, `.mode()` to fill null values and add relavent a=values
+- Used `.mean()`, `.mode()` to fill null values and add relavent values
 
 ### 3. Machine Learning
 - Model used: `KNeighborsClassifier` from `sklearn`
