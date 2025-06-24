@@ -46,6 +46,11 @@ This mini project uses the Titanic dataset to explore data preprocessing and app
 - **File used**: `Titanic-Dataset.csv`
 
 
+## Titanic Model Comparision 
+
+- Three Classifiers are compared - `KNearesKNeighborsClassifier`, `DecisionTreeClassifier` and `RandomForestClassifie` 
+
+
 ## Dataset License Notice
 The Titanic dataset used in this project is publicly available for educational use and is provided by platforms like Kaggle.
 
