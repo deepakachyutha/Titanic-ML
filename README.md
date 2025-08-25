@@ -1,8 +1,8 @@
 # Titanic-ML
 
-## Titanic Survival Prediction (KNN Classifier)
+## Titanic Survival Prediction 
 
-This mini project uses the Titanic dataset to explore data preprocessing and apply a simple K-Nearest Neighbors (KNN) model to predict passenger survival.
+This mini project uses the Titanic dataset to explore data preprocessing and apply K-Nearest Neighbors (KNN) model, DecisionTreeClassifier and RandomForestClassifier to predict passenger survival.
 
 
 ## Tools Used
