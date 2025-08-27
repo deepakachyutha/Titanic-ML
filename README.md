@@ -2,42 +2,47 @@
 
 ## Titanic Survival Prediction 
 
-This mini project uses the Titanic dataset to explore data preprocessing and apply K-Nearest Neighbors (KNN) model, DecisionTreeClassifier and RandomForestClassifier to predict passenger survival.
+### Project Overview
 
+This project presents a complete machine learning workflow to predict passenger survival on the Titanic. . The goal was to go beyond a basic model and demonstrate a data-driven approach, from initial exploratory analysis and data cleaning to a comparative evaluation of multiple classification algorithms to identify the most effective model. 
 
-## Tools Used
+### Methodology
+
+The project was broken down into three key phases:
+
+1.  **Data Visualization & Analysis:**
+    * Performed a comprehensive Exploratory Data Analysis (EDA) to understand the dataset's structure and uncover key relationships between passenger attributes (like class, sex, and age) and survival rates.
+    * Created several visualizations, including correlation heatmaps and bar charts, to inform feature selection and preprocessing strategies.
+
+2.  **Data Cleaning & Preprocessing:**
+    * Executed robust data cleaning procedures, handling missing values in `Age`, `Fare`, and `Embarked` with mean/mode imputation to ensure a complete dataset for modeling.
+    * Transformed categorical features like `Sex` and `Embarked` into numerical formats to make them compatible with machine learning algorithms.
+
+3.  **Model Training & Comparison:**
+    * Trained and evaluated three distinct classification models to find the best predictor for this task:
+        * K-Nearest Neighbors (KNN)
+        * Decision Tree Classifier
+        * Random Forest Classifier
+    * Rigorously tested each model on unseen data to ensure the results were generalizable and reliable.
+
+### Results
+
+The Random Forest Classifier delivered the highest accuracy, demonstrating the strength of ensemble methods on this dataset.
+
+| Model                    | Accuracy |
+| ------------------------ | :------: |
+| K-Nearest Neighbors      |  72.22%  |
+| Decision Tree Classifier |  77.78%  |
+| **Random Forest Classifier** | **81.11%** |
+
+### Technologies Used
 
 - Python
 - Pandas
 - NumPy
 - Matplotlib
+- Seaborn
 - Scikit-learn
-
-
-## Tasks Performed
-
-### 1. Data Visualization
-- Created a Age distribution histogram
-- Created a Bar chart of survival rate by sex
-- Created a Scatter plot of Age vs. Fare
-
-### 2. Data Analysis & Preprocessing
-- Handled missing values (`Age`, `Fare`, and `Sex`)
-- Converted categorical variables (`Sex`, `Embarked`) into numerical values using `.map()`
-- Used `.mean()`, `.mode()` to fill null values and add relavent values
-
-### 3. Machine Learning
-- Model used: `KNeighborsClassifier` from `sklearn`
-- Features used: `Pclass`, `Age`, `Sex`, `Fare`
-- Target: `Survived`
-- Accuracy testing using `train_test_split` and `accuracy_score`
-
-
-## Results
-
-- Achieved basic prediction for survival
-- Example: A 19-year-old male, 3rd class, fare 7.25 → predicted outcome (`Not Survived`)
-- Accuracy: ~`69.27%`
 
 
 ## Dataset
@@ -54,9 +59,16 @@ This mini project uses the Titanic dataset to explore data preprocessing and app
 ## Titanic Data Visualization
 - Various models like - `Barplot`, `heatmap`, and `pairplot` are used to understand and visualize the data. 
 
+### How to Run
+
+1.  Clone the repository.
+2.  Ensure you have the required libraries installed (`pandas`, `matplotlib`, `seaborn`, `scikit-learn`).
+3.  Open and run the Jupyter Notebooks (`Titanic.ipynb`, `TitanicModelComparision.ipynb`, `TitanicVisualization.ipynb`) to see the full analysis and model training process.
+
+---
+
 ## Dataset License Notice
 The Titanic dataset used in this project is publicly available for educational use and is provided by platforms like Kaggle.
 
-
-
+---
 *Created by Deepak Battula*
